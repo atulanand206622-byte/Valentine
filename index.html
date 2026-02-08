@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Valentine 💖</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ff416c, #ff4b2b);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+      padding-top: 100px;
+    }
+    .box {
+      background: rgba(0,0,0,0.3);
+      padding: 30px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 400px;
+      margin: auto;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      margin: 15px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    .yes { background-color: #00ff99; }
+    .no { background-color: #ff4d4d; }
+  </style>
+</head>
+
+<body>
+
+<div class="box">
+  <h2>💘 Question 💘</h2>
+  <p>Ayushi will you be my Valentine 🙈</p>
+
+  <button class="yes" onclick="answer()">Yes ❤️</button>
+  <button class="no" onclick="answer()">No 💔</button>
+</div>
+
+<script>
+  function answer() {
+    document.body.innerHTML = `
+      <div style="margin-top:120px">
+        <h1>😍 It's a YES 😍</h1>
+        <h2>Happy Valentine ❤️</h2>
+      </div>
+    `;
+  }
+</script>
+
+</body>
+</html>
